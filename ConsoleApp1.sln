@@ -61,3 +61,39 @@ namespace ConsoleApp1
         }
     }
 }
+
+
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            string last;
+            int yearofbirth, age;
+            Console.WriteLine("enter your name: ");
+            name = Console.ReadLine();
+            Console.WriteLine("enter your last name: ");
+            last = Console.ReadLine();
+            Console.WriteLine($"Welcome, {name} {last}");
+            Console.WriteLine("Enter yourbirthday");
+            yearofbirth = Convert.ToInt32(Console.ReadLine());
+            age = 2021 - yearofbirth;
+            int currentDate = DateTime.Now.Year;
+
+            age = currentDate = yearofbirth;
+
+            if (age >= 13)
+            {
+                Console.WriteLine("Welcome to Instagram");
+            }else
+            {
+                Console.WriteLine("Youre too young for instagram");
+            }
+
+        }
+    }
+}
